@@ -15,13 +15,17 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <h1 class="text-center mt-2 mb-4">Phi Careers</h1>    
+    <div class="container-fluid ps-5 pe-5">
+        <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>    
         <img class="img-fluid" id="banner" src="http://127.0.0.1:5000/static/Just_do_it.jpg" alt="">
         <h2 class="text-center mt-2 mb-4">About Phi</h2>
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-        <p class="bodytext">TODO- Show the jobs here</p>
+        <div>
+            {% for job in jobs %}
+                {% include 'jobitem.html' %}
+            {% endfor %}
+        </div>
         <div class="text-center mt-2 mb-4">
             <button class="btn btn-primary btn-lg">Contact Us!</button>
             <p class="mt-4">Copyright 2023, Ishaan Phaye</p>
