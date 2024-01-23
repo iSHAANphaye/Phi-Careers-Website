@@ -1,3 +1,5 @@
+# cd "C:\Users\ishaan phaye\Desktop\VS Code\Web Dev Course\Python-Flask-Backend"
+# conda activate webd
 # To run server, use command: flask --app app run --debug
 
 from flask import Flask, render_template, jsonify
@@ -28,6 +30,12 @@ JOBS = [
     'title': 'Backend Engineer',
     'location': 'San Francisco, USA',
     'salary': '$120,000'
+},
+{
+    'id': 5,
+    'title': 'ML Engineer',
+    'location': 'New York, USA',
+    'salary': '$150,000'
 }
 ]
 
